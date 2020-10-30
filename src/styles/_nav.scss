@@ -1,0 +1,30 @@
+
+.header {
+background: #FFFFFF;
+box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15); 
+font-family: $global-font-family;
+  font-size: $global-font-size;
+  font-weight: 400;
+  line-height: $global-line-height;
+  background-color: #FFFFFF;
+  color: $global-font-color;
+}
+.navbar-brand {
+    font-style: 22px;
+    text-transform: uppercase;
+}
+li .nav-link {
+    color: $global-font-color;
+display: flex;
+align-items: center;
+    
+    &-user::before{
+        content: '';
+        width: 22px;
+        height: 22px;
+        display: inline-flex;
+        align-items: center;
+        background-image: url('../images/nav/Пользователь\ 1.svg');
+    background-size: contain;
+    }
+}
