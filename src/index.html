@@ -1,95 +1,57 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-
-<div class="container">
-    <div class="row">
-        <div class="col-sm">Hello world!</div>
-        <div class="col-sm">Hello world!</div>
-        <div class="col-sm">Hello world!</div>
-    </div>
-</div>
-<div class="uk-offcanvas-content">
-    <div class="uk-child-width-1-1 uk-height-viewport uk-flex uk-flex-wrap uk-flex-wrap-between">
-        <div>
-
-            <!--Header-->
-            <header class="uk-navbar-container uk-position-relative">
-                <nav uk-navbar>
-                    <div class="uk-navbar-left">
-
-                        <!--mobile menu toggle-->
-                        <a href="#offcanvas-overlay" class="uk-navbar-toggle uk-hidden@l"
-                           uk-navbar-toggle-icon uk-toggle></a>
-
-                        <!--logo-->
-                        <a class="uk-navbar-item uk-logo" href="/">
-                            <img src="images/logo_tourweek.png" alt="">
-                        </a>
-
-                        <!--navbar menu-->
-                        <ul class="uk-navbar-nav uk-visible@l">
-                            <li><a href="#"></a></li>
-                            <li>
-                                <a href="#"></a>
-
-                                <div class="uk-navbar-dropdown"
-                                     uk-drop="mode: click; boundary: !header; boundary-align: true; pos: bottom-justify;">
-                                    <div class="uk-container">
-                                        <ul class="uk-nav uk-navbar-dropdown-nav uk-column-1-4">
-                                            <li><a href="#"></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-
-                    </div>
-
-                    <div class="uk-navbar-center uk-visible@l"></div>
-
-                    <div class="uk-navbar-right"></div>
-                </nav>
-            </header>
-
-            <!-- Section -->
-            <div class="uk-section">
-                <div class="uk-container">
-
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css">
+    <title>Car numbers</title>
+  </head>
+  <body>
+    <!-- page wrapper-->
+    <div class="page">
+      <div>
+        <!-- page header -->
+        <header class="header">
+          <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="navbar-nav">
+                    <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#">Features</a>
+                    <a class="nav-link" href="#">Pricing</a>
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                  </div>
                 </div>
-            </div>
+              </nav>
+          </div>
+        </header>
 
-        </div>
-
-        <!--Footer-->
-        <footer class="uk-section">
-            <div class="uk-container">
-
-            </div>
-        </footer>
+        <!-- page main-->
+        <main>
+          <!-- section -->
+          <section>
+            <div class="container"></div>
+          </section>
+     
+          <!-- section -->
+          <section class="howItWorks section">
+            <div class="container"></div>
+          </section>
+        </main>
+      </div>
+      <!-- page footer -->
+      <footer class="footer">
+        <div class="container"></div>
+      </footer>
     </div>
-
-    <!-- Off-canvas -->
-    <div id="offcanvas-overlay" uk-offcanvas="mode: push; overlay: true">
-        <div class="uk-offcanvas-bar">
-            <button class="uk-offcanvas-close" type="button" uk-close></button>
-
-            <div class="uk-card uk-flex uk-flex-center">
-                <ul class="uk-nav">
-                    <li><a href="#"></a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-</div>
-
-</body>
+  </body>
 </html>
