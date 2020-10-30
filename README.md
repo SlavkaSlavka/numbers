@@ -1,6 +1,7 @@
-# webpack
+# webpack-bootstrap
 
 features:
+- bootstrap v4.5.0
 - scss
 - es7, stage-0
 - jquery v3.3.1 (global variable $, import not needed)

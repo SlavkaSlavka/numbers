@@ -1,9 +1,9 @@
 {
-  "name": "webpack",
+  "name": "webpack-uikit",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "git@github.com:SlavkaSlavka/UpHome.git",
-  "author": "Slavka",
+  "repository": "git@github.com:Lutsman/webpack-uikit.git",
+  "author": "Lutsman <333333y@gmail.com>",
   "license": "MIT",
   "scripts": {
     "build": "webpack --config webpack/webpack.config.prod.js  --colors",
@@ -12,6 +12,7 @@
   "dependencies": {
     "@babel/polyfill": "^7.2.5",
     "@fortawesome/fontawesome-free": "^5.7.2",
+    "bootstrap": "^4.5.0",
     "jquery": "^3.3.1",
     "select2": "^4.0.6-rc.1"
   },
