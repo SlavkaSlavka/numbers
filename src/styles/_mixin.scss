@@ -1,0 +1,3 @@
+@mixin add-col($columns) {
+  width: percentage(1 / $columns);
+}

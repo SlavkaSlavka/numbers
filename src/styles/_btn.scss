@@ -1,0 +1,63 @@
+.btn {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 30px;
+  box-sizing: border-box;
+  font-family: $global-heading-family;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 34px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 0;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  overflow: visible;
+  user-select: none;
+  -webkit-appearance: none;
+
+  &:focus {
+    outline: none;
+  }
+
+  /* Elements */
+
+  /* Modifiers theme */
+  &_theme {
+    &_default {
+      color: $inverse-color;
+      background-color: $primary-color;
+      border-color: $primary-color;
+
+      &:hover {
+        background-color: darken($primary-color, 10%);
+        border-color: darken($primary-color, 10%);
+      }
+    }
+
+    &_inverse {
+      color: $inverse-color;
+      background-color: transparent;
+      border-color: $inverse-color;
+
+      &:hover {
+        color: $secondary-color;
+        border-color: $secondary-color;
+      }
+    }
+  }
+
+  /* Modifiers view */
+  &_view_mobile {
+    display: inline-block;
+  }
+}
+
+@media (min-width: $breakpoint-md) {
+  .btn_view_mobile {
+    display: none;
+  }
+}

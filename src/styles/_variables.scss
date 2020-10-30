@@ -1,0 +1,22 @@
+$breakpoint-sm: 640px; // Phone landscape
+$breakpoint-md: 960px; // Tablet Landscape
+$breakpoint-lg: 1200px; // Desktop
+$breakpoint-xl: 1600px; // Large Screens
+
+$global-font-family: "Montserrat", sans-serif;
+$global-heading-family: $global-font-family;
+$description-family: "Ubuntu";
+$global-font-size: 16px;
+$global-line-height: 1.5;
+
+$primary-color: #017ff8;
+$secondary-color: #132e71;
+$inverse-color: #fff;
+
+$global-font-color: #071427;
+$global-heading-color: $global-font-color;
+$global-link-color: $inverse-color;
+
+$global-background-color: #fff;
+$secondary-background-color: #f9f9fb;
+$global-padding-margin: 15px;

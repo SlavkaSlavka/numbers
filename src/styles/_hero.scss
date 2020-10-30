@@ -1,0 +1,38 @@
+.hero__form-wrapper {
+  color: $inverse-color;
+  position: relative;
+  background-color: #017ff8;
+}
+.hero__title {
+  color: $inverse-color;
+}
+
+@media screen and (max-width: 500px) {
+  .hero {
+    &__form-wrapper {
+      padding-top: 40px;
+      padding-left: $global-padding-margin;
+    }
+    &__list {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    &__title {
+      font-weight: 800;
+      font-size: 28px;
+      line-height: 1.21;
+      text-transform: none;
+      margin-bottom: $global-padding-margin;
+    }
+    &__text {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 1.22;
+      margin-bottom: 45px;
+    }
+  }
+  .main-form__wrapper {
+    background-color: #fff;
+    margin-left: -$global-padding-margin;
+  }
+}
