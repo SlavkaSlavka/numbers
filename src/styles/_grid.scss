@@ -1,6 +1,5 @@
 $grid-gutters: 15px;
 $container-width: 1200px;
-$container-large-width: 13440px;
 
 .container {
   width: 100%;
@@ -11,14 +10,6 @@ $container-large-width: 13440px;
   margin-left: auto;
   box-sizing: border-box;
   
-  &_large {
-  max-width: $container-large-width;
-  padding-right: $grid-gutters;
-  padding-left: $grid-gutters;
-  margin-right: auto;
-  margin-left: auto;
-  box-sizing: border-box;
-  }
 }
 
 .row {
