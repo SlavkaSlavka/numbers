@@ -2,6 +2,13 @@
   width: 100%;
 }
 
-.table__title th {
-  background-color: $global-link-color;
+.table {
+  &__title th {
+    background-color: $global-link-color;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    max-width: 820px;
+  }
 }
