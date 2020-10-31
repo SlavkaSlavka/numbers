@@ -1,0 +1,21 @@
+.slider__list_item span {
+  font-family: $secondary-font-family;
+  display: inline-block;
+}
+.slider__list {
+  display: flex;
+  &_item {
+    border-radius: 5px;
+    border: 1px solid #dddddd;
+    background-color: #fff;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+.list_item-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 20px;
+}
