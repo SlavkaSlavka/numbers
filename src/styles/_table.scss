@@ -65,5 +65,43 @@
   font-weight: 600;
 }
 .list-sort {
-  margin-right: 6%;
+  width: 155px;
+}
+.table__footer-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &_item {
+    & svg:hover {
+      color: $global-link-color;
+    }
+    min-width: 30px;
+    max-width: 30px;
+    min-height: 30px;
+    max-height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $secondary-font-family;
+    background: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    color: #4f4f4f;
+    margin-right: 15px;
+    & a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #4f4f4f;
+    }
+    & span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+    }
+  }
+}
+.footer-list__item-active {
+  background-color: $global-link-color;
 }

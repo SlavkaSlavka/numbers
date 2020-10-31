@@ -22,7 +22,7 @@
               <a class="navbar-brand mr-auto" href="#">Лого</a>
               <ul class="nav">
                 <li class="nav-item"><a href="#" class="nav-link nav-link-user">Регистрация</a></li>
-                <li  class="nav-item"><a href="#" class="nav-link nav-link-center">Вход</a></li>
+                <li  class="nav-item nav-item-center"><a href="#" class="nav-link nav-link-center">Вход</a></li>
               </ul>
               <button type="button" class="btn btn-blue">Добавить объявлениe</button>
             </nav>
@@ -232,23 +232,73 @@
                 </tr>
                 </tbody>
               </table>
+              <ul class="table__footer-list list">
+                <li class="table__footer-list_item"><a href="#"><svg width="12" height="11" viewBox="0 0 12 11" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0)">
+                    <path
+                      d="M11.959 5.5L2.25586 5.5L6.20508 1.87988L5.36133 1.10107L-0.0410156 6.04785L5.36133 11L6.20508 10.2212L2.25586 6.60107L11.959 6.60107V5.5Z" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0">
+                      <rect width="12" height="11" fill="white" transform="translate(12 11) rotate(-180)" />
+                    </clipPath>
+                  </defs>
+                </svg></a></li>
+                <li class="table__footer-list_item"><a href="#">1</a></li>
+                <li class="table__footer-list_item footer-list__item-active"><span>2</span></li>
+                <li class="table__footer-list_item"><a href="#">3</a></li>
+                <li class="table__footer-list_item"><a href="#">...</a></li>
+                <li class="table__footer-list_item"><a href="#">18</a></li>
+                <li class="table__footer-list_item"><a href="#"><svg width="12" height="11" viewBox="0 0 12 11" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0)">
+                    <path
+                      d="M0.0410156 5.5H9.74414L5.79492 9.12012L6.63867 9.89893L12.041 4.95215L6.63867 0L5.79492 0.778809L9.74414 4.39893H0.0410156V5.5Z" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0">
+                      <rect width="12" height="11" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg></a></li>
+              </ul>
             </div>
           </section>
           <section class="section slider">
             <div class="container">
               <h2 class="slider__title">Номера с фото</h2>
               <ul class="slider__list list">
-                <li class="slider__list_item">
-                  <img src="./images/slider/carNumber.jpg"><div class="list_item-wrapper"><span>М123СК777</span><span>255 000 Р</span></div>
+                <li class="slider__list_item position-wrapper" ><span class="position-span-left"><svg width="20" height="20" viewBox="0 0 12 11" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0)">
+                    <path
+                      d="M11.959 5.5L2.25586 5.5L6.20508 1.87988L5.36133 1.10107L-0.0410156 6.04785L5.36133 11L6.20508 10.2212L2.25586 6.60107L11.959 6.60107V5.5Z" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0">
+                      <rect width="12" height="11" fill="white" transform="translate(12 11) rotate(-180)" />
+                    </clipPath>
+                  </defs>
+                </svg></span>
+                  <img src="./images/slider/carNumber.jpg"><div class="list_item-wrapper"><span>М123СК777</span><span class="list_item-cost">255 000 Р</span></div>
                 </li>
                 <li class="slider__list_item">
-                  <img src="./images/slider/carNumber.jpg"><div class="list_item-wrapper"><span>Н681ТВ150</span><span>455 000 Р</span></div>
+                  <img src="./images/slider/carNumber.jpg"><div class="list_item-wrapper"><span>Н681ТВ150</span><span class="list_item-cost">455 000 Р</span></div>
                 </li>
                 <li class="slider__list_item">
-                  <img src="./images/slider/carNumber.jpg"><div class="list_item-wrapper"><span>У123СС177</span><span>25 0000 Р</span></div>
+                  <img src="./images/slider/carNumber.jpg"><div class="list_item-wrapper"><span>У123СС177</span><span class="list_item-cost">25 0000 Р</span></div>
                 </li>
-                <li class="slider__list_item">
-                  <img src="./images/slider/carNumber.jpg"><div class="list_item-wrapper"><span>М123СК777</span><span>355 000 Р</span></div>
+                <li class="slider__list_item position-wrapper"><span class="position-span-right"><svg width="20" height="20" viewBox="0 0 12 11" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0)">
+                    <path
+                      d="M0.0410156 5.5H9.74414L5.79492 9.12012L6.63867 9.89893L12.041 4.95215L6.63867 0L5.79492 0.778809L9.74414 4.39893H0.0410156V5.5Z" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0">
+                      <rect width="12" height="11" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg></span>
+                  <img src="./images/slider/carNumber.jpg">
+                  <div class="list_item-wrapper"><span>М123СК777</span><span class="list_item-cost">355 000 Р</span></div>
                 </li>
               </ul>
             </div>
@@ -257,7 +307,12 @@
       </div>
       <!-- page footer -->
       <footer class="footer">
-        <div class="container"></div>
+        <div class="container">
+          <ul class="footer__list list">
+          <li class="footer__list_item-policy"><a href="#">Политика конфиденциальности</a></li>
+          <li class="footer__list_item-date">© 2020 Все права защищены</li>
+        </ul>
+        </div>
       </footer>
     </div>
   </body>

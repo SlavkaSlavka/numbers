@@ -24,3 +24,37 @@
   font-weight: 600;
   font-size: 30px;
 }
+.list_item-cost {
+  color: $global-link-color;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.17;
+}
+.position-wrapper {
+  position: relative;
+}
+.position-wrapper .position-span-right,
+.position-wrapper .position-span-left {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  border: 1px solid #dddddd;
+  border-radius: 50%;
+  transition: all 100ms ease-in;
+  &:hover {
+    color: $global-link-color;
+    border: 1px solid $global-link-color;
+  }
+}
+.position-wrapper .position-span-left {
+  left: -65px;
+  bottom: 50%;
+}
+.position-wrapper .position-span-right {
+  right: -65px;
+  bottom: 50%;
+}

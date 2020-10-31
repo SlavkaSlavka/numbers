@@ -1,0 +1,25 @@
+.footer {
+  color: white;
+  &__list {
+    display: flex;
+  }
+  background-color: $global-link-color;
+}
+.footer__list {
+  margin: 0;
+  position: relative;
+  &_item-policy a {
+    line-height: 55px;
+    color: white;
+    vertical-align: middle;
+    text-decoration: underline;
+    font-size: 14px;
+  }
+  &_item-date {
+    position: absolute;
+    vertical-align: middle;
+    font-size: 14px;
+    line-height: 55px;
+    left: 50%;
+  }
+}

@@ -32,20 +32,28 @@ li .nav-link {
       background-size: contain;
     }
   }
-  &-center::before {
-    content: "";
-    width: 1px;
-    height: 22px;
-    display: inline-flex;
-    align-items: center;
-    margin-right: 14px;
-    background-image: url("../images/nav/Line\ 1.svg");
-    background-size: contain;
-  }
 }
 .navbar .btn {
   margin-left: 15px;
 }
 .navbar {
   padding: 0;
+}
+.nav-item-center::before {
+  content: "";
+  width: 1px;
+  height: 22px;
+  display: inline-flex;
+  align-items: center;
+  margin-right: 15px;
+  margin-left: 15px;
+  background-image: url("../images/nav/Line\ 1.svg");
+  background-size: contain;
+}
+.nav-item {
+  display: flex;
+  align-items: center;
+}
+.nav-link-center {
+  padding-left: 0;
 }
