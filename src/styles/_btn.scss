@@ -1,0 +1,35 @@
+html .btn {
+  padding: 15px 30px;
+  font-family: $global-font-family;
+  font-weight: 500;
+  font-size: $global-font-size;
+  line-height: $global-line-height;
+  border-radius: 5px;
+  &-white {
+    background: #ffffff;
+    color: $global-link-color;
+    border: 1px solid $global-link-color;
+    &:hover,
+    :focus {
+      border: 1px solid $hover-color;
+      color: $hover-color;
+    }
+    &:active {
+      border: 1px solid $active-color;
+      color: $active-color;
+    }
+  }
+  &-blue {
+    background-color: $global-link-color;
+    color: white;
+    &:hover,
+    :focus {
+      background: $hover-color;
+      color: white;
+    }
+    &:active {
+      background: $active-color;
+      color: white;
+    }
+  }
+}

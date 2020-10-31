@@ -1,30 +1,46 @@
-
 .header {
-background: #FFFFFF;
-box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15); 
-font-family: $global-font-family;
+  background: #ffffff;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+  font-family: $global-font-family;
   font-size: $global-font-size;
   font-weight: 400;
   line-height: $global-line-height;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   color: $global-font-color;
 }
 .navbar-brand {
-    font-style: 22px;
-    text-transform: uppercase;
+  font-style: 22px;
+  text-transform: uppercase;
 }
 li .nav-link {
-    color: $global-font-color;
-display: flex;
-align-items: center;
-    
-    &-user::before{
-        content: '';
-        width: 22px;
-        height: 22px;
-        display: inline-flex;
-        align-items: center;
-        background-image: url('../images/nav/Пользователь\ 1.svg');
-    background-size: contain;
+  color: $global-font-color;
+  display: flex;
+  align-items: center;
+
+  &-user {
+    padding-right: 0;
+    &::before {
+      content: "";
+      width: 22px;
+      height: 22px;
+      display: inline-flex;
+      align-items: center;
+      margin-right: 10px;
+      background-image: url("../images/nav/Пользователь\ 1.svg");
+      background-size: contain;
     }
+  }
+  &-center::before {
+    content: "";
+    width: 1px;
+    height: 22px;
+    display: inline-flex;
+    align-items: center;
+    margin-right: 14px;
+    background-image: url("../images/nav/Line\ 1.svg");
+    background-size: contain;
+  }
+}
+.navbar .btn {
+  margin-left: 15px;
 }

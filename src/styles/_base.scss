@@ -42,7 +42,8 @@ h5,
 h6 {
   font-weight: 700;
   line-height: 1;
-  text-transform: uppercase;
+  font-family: $global-font-family;
+  line-height: $global-line-height;
 }
 .section {
   padding-bottom: 60px;
