@@ -1,14 +1,68 @@
-.section .table {
-  width: 100%;
+.table-section {
+  background-color: $global-background-color;
 }
-
 .table {
-  &__title th {
+  &__item {
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+  }
+  &__best-item {
+    background-color: #fdffc2;
+  }
+  width: 100%;
+  &__title {
     background-color: $global-link-color;
   }
   &__list {
     display: flex;
     justify-content: space-between;
     max-width: 820px;
+  }
+  & td,
+  th {
+    vertical-align: middle;
+  }
+  &__number img {
+    max-width: 185px;
+  }
+  &__number::after {
+    content: "";
+    display: inline-block;
+    margin-left: 15px;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    background-image: url("../images/table/crown.svg");
+    background-size: contain;
+  }
+  &__photo::before {
+    content: "";
+    display: inline-block;
+    margin-right: 15px;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    background-image: url("../images/table/photo.svg");
+    background-size: contain;
+  }
+  &__seller {
+    font-family: $secondary-font-family;
+  }
+  &__item-date {
+    font-family: $secondary-font-family;
+    font-weight: 300;
+  }
+  &__item-cost {
+    font-family: $secondary-font-family;
+    font-weight: 500;
+  }
+  &__white-item {
+    background-color: #fff;
+  }
+  &__gray-item {
+    background-color: $secondary-background-color;
+  }
+  &__false-photo {
+    color: #828282;
   }
 }
