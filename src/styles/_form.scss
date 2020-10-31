@@ -1,0 +1,59 @@
+.filter {
+  &__form {
+    padding-top: 25px;
+    padding-bottom: 50px;
+    padding-left: 40px;
+    background-color: #efefef;
+  }
+}
+.form__input-town {
+  width: 320px;
+  margin-right: 25px;
+  border: 1px solid #bdbdbd;
+  border-radius: 5px;
+  padding: 15px;
+  padding-right: 0;
+}
+.form__input {
+  margin-right: 10px;
+  background: #ffffff;
+  border: 1px solid #bdbdbd;
+  border-radius: 5px;
+  padding: 15px;
+  padding-right: 0;
+  width: 85px;
+}
+.select-wrapper {
+  margin-bottom: 15px;
+}
+.check-wrapper {
+  margin-bottom: 40px;
+  & label {
+    font-size: 16px;
+    line-height: 19px;
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+}
+.cost-wrapper {
+  & input {
+    margin-left: 20px;
+    background: #ffffff;
+    border: 1px solid #bdbdbd;
+    border-radius: 5px;
+    padding: 15px;
+    padding-right: 0;
+    width: 130px;
+  }
+  & label {
+    &:not(:last-child) {
+      margin-right: 25px;
+    }
+  }
+}
+.cost-link {
+  color: $global-link-color;
+  text-decoration: underline;
+  margin-right: 100px;
+}

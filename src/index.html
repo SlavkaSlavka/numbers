@@ -55,15 +55,86 @@
           <!-- section -->
           <section class="section filter">
             <div class="container">
-              <form>
-                <input type="text">
-                <input type="text">
-                <input type="text">
-                <input type="text">
-                <input type="text">
-                <input type="text">
-                <input type="text">
-                <input type="text">
+              <form class="filter__form form">
+                <h2>Фильтр</h2>
+                <div class="select-wrapper">
+                <select class="form__input-town" name="Town">
+                  <option value="moscov">Москва</option>
+                  <option value="Piter">Питер</option>
+                  <option value="Sochi">Сочи</option>
+                  <option value="Kazan">Казань</option>
+                </select>
+                <select class="form__input" name="">
+                  <option value=""></option>
+                  <option value=""></option>
+                  <option value=""></option>
+                  <option value=""></option>
+                </select>
+                <select class="form__input" name="">
+                  <option value=""></option>
+                  <option value=""></option>
+                  <option value=""></option>
+                  <option value=""></option>
+                </select>
+                <select class="form__input" name="">
+                  <option value=""></option>
+                  <option value=""></option>
+                  <option value=""></option>
+                  <option value=""></option>
+                </select>
+                <select class="form__input" name="">
+                  <option value=""></option>
+                  <option value=""></option>
+                  <option value=""></option>
+                  <option value=""></option>
+                </select>
+                <select class="form__input" name="">
+                  <option value=""></option>
+                  <option value=""></option>
+                  <option value=""></option>
+                  <option value=""></option>
+                </select>
+                <select class="form__input" name="">
+                  <option value=""></option>
+                  <option value=""></option>
+                  <option value=""></option>
+                  <option value=""></option>
+                </select>
+                <select class="form__input" name="">
+                  <option value=""></option>
+                  <option value=""></option>
+                  <option value=""></option>
+                  <option value=""></option>
+                </select>
+                </div>
+                <div class="check-wrapper">
+                  <input id="identical letters" name="identical letters" type="checkbox" value="identical letters" />
+                  <label for="identical letters">Одинаковые буквы</label>
+                  <input id="same numbers" name="same numbers" type="checkbox" value="same numbers" />
+                  <label for="same numbers">Одинаковые цифры</label>
+                  <input id="first ten" name="first ten" type="checkbox" value="first ten" />
+                  <label for="first ten">Первая десятка</label>
+                  <input id="exact hundred" name="exact hundred" type="checkbox" value="exact hundred" />
+                  <label for="exact hundred">Ровная сотня</label>
+                  <input id="with photo only" name="with photo only" type="checkbox" value="with photo only" />
+                  <label for="with photo only">Только с фото</label>
+                  <input id="not older than 6 months" name="not older than 6 months" type="checkbox" value="not older than 6 months" />
+                  <label for="not older than 6 months">Не старше 6 месяцев</label>
+                </div>
+                <div class="cost-wrapper">
+                  <label>
+                  Цена от
+                    <input type="text" name="cost from" />
+                  </label>
+                  <label>
+                    До
+                    <input type="text" name="cost to" />
+                  </label>
+                  <a class="cost-link">Быстрый переход</a>
+                  <button class="btn btn-blue">Показать</button>
+                  <button class="btn btn-white">Сбросить</button>
+                </div>
+                
               </form>
             </div>
           </section>
