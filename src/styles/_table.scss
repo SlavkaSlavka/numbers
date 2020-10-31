@@ -6,7 +6,7 @@
     border: 1px solid #dddddd;
     border-radius: 5px;
   }
-  &__best-item {
+  &__best-item td {
     background-color: #fdffc2;
   }
   width: 100%;
@@ -35,16 +35,6 @@
     background-image: url("../images/table/crown.svg");
     background-size: contain;
   }
-  &__photo::before {
-    content: "";
-    display: inline-block;
-    margin-right: 15px;
-    vertical-align: middle;
-    width: 20px;
-    height: 20px;
-    background-image: url("../images/table/photo.svg");
-    background-size: contain;
-  }
   &__seller {
     font-family: $secondary-font-family;
   }
@@ -56,13 +46,10 @@
     font-family: $secondary-font-family;
     font-weight: 500;
   }
-  &__white-item {
-    background-color: #fff;
-  }
-  &__gray-item {
-    background-color: $secondary-background-color;
-  }
-  &__false-photo {
+  &__false-photo_link {
     color: #828282;
   }
+}
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: white;
 }
