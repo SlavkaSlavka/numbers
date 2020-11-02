@@ -1,0 +1,33 @@
+.modal-header-town {
+    & button {
+        outline: none;
+    }
+border: none;
+}
+.modal-dialog-town {
+    max-width: 1030px;
+}
+.modal-text {
+    & a {
+        &:hover,
+        :focus {
+            color: $global-link-color !important;
+        }
+        cursor: pointer;
+        padding-bottom: 10px;
+    }
+    display: flex;
+    flex-direction: column;
+}
+.modal-body-town {
+    padding-left: 65px;
+    padding-right: 65px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.modal-body {
+    & .modal-title-quick {
+    text-align: center;
+} }
