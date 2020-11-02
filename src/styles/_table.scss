@@ -51,6 +51,10 @@
     font-weight: 500;
   }
   &__false-photo_link {
+    &:hover,
+    :focus {
+      color: #828282;
+    }
     color: #828282;
   }
 }
@@ -92,16 +96,29 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      color: #4f4f4f;
+      color: inherit;
     }
     & span {
       display: flex;
       justify-content: center;
       align-items: center;
-      color: white;
+    color: white;
     }
   }
 }
 .footer-list__item-active {
   background-color: $global-link-color;
+  border: none;
+  &:hover span,
+  :focus span{
+    background: #ffffff;;
+    color: #4f4f4f;
+  }
+  &:hover ,
+  :focus {
+    background: #ffffff;
+    border: 1px solid #dddddd;
+    
+
+  }
 }

@@ -7,12 +7,10 @@
   }
 }
 .form__input-town {
+
   width: 320px;
-  margin-right: 25px;
   border: 1px solid #bdbdbd;
   border-radius: 5px;
-  padding: 15px;
-  padding-right: 0;
 }
 .form__input {
   margin-right: 10px;
@@ -23,7 +21,7 @@
   padding-right: 0;
   width: 85px;
 }
-.select-wrapper {
+.select-wrapper{
   margin-bottom: 15px;
 }
 .check-wrapper {
@@ -56,4 +54,39 @@
   color: $global-link-color;
   text-decoration: underline;
   margin-right: 100px;
+}
+ .select2 {
+   &:first-child {
+     margin-right: 25px;
+   }
+   &:not(:last-child){
+ margin-right: 10px; }
+}
+
+.select2-selection{
+&__arrow {
+  color: #4F4F4F;
+  margin-top: 12px;
+  margin-right: 15px;
+}
+&__rendered {
+  padding-top: 12px;
+
+}
+}
+
+.select2-selection{
+  outline: none;
+  min-height: 50px;
+}
+.select2-container--default .select2-selection--single {
+  font-family: $global-font-family;
+  border: 1px solid #BDBDBD;
+border-radius: 5px;
+}
+.cost-wrapper button {
+  min-width: 190px;
+}
+body .select2-selection__rendered {
+  color: #222222;
 }
