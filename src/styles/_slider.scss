@@ -14,10 +14,12 @@
   }
 }
 .list_item-wrapper {
+  flex-basis: 50%;
   width: 100%;
   display: flex;
-  justify-content: space-between;
-  padding: 25px 20px;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+
 }
 .slider__title {
   margin-bottom: 25px;
@@ -58,3 +60,4 @@
   right: -65px;
   bottom: 50%;
 }
+

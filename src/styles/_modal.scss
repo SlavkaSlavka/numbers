@@ -10,6 +10,7 @@ border: none;
 .modal-text {
     font-family: $secondary-font-family;
     & a {
+        color: $global-font-color;
         &:hover,
         :focus {
             color: $global-link-color !important;
@@ -44,6 +45,7 @@ border: none;
  .modal-quick-list{ 
      & .list li {
          margin-bottom: 10px;
+         & a{color: $global-font-color;}
          & a:hover,
          :focus {
 color: $global-link-color;

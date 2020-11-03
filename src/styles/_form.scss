@@ -7,10 +7,25 @@
   }
 }
 .form__input-town {
+  position: relative;
+  & span {
+    position: absolute;
+    right: 20px;
+  }
 
+  &:active,
+  &:focus,
+  &:hover{
+    font-weight: 600;
+    outline: none;
+  }
   width: 320px;
   border: 1px solid #bdbdbd;
   border-radius: 5px;
+  background-color: #fff;
+  line-height: 48px;
+  outline: none;
+  margin-right: 15px;
 }
 .form__input {
   margin-right: 10px;
@@ -19,7 +34,7 @@
   border-radius: 5px;
   padding: 15px;
   padding-right: 0;
-  width: 85px;
+  min-width: 80px;
 }
 .select-wrapper{
   margin-bottom: 15px;
@@ -31,7 +46,7 @@
     line-height: 19px;
     position: relative;
     &:not(:last-child) {
-      margin-right: 20px;
+      margin-right: 15px;
     }
   }
 }
@@ -136,3 +151,51 @@ body .select2-selection__rendered {
     background-color: white;
     background-image: url("../images/form/Vector.svg");
   }
+ 
+  @media screen and (max-width: 1199px) { 
+
+    .select-wrapper {
+      max-width: 650px;
+    }
+    .check-wrapper {
+      max-width: 650px;
+    }
+  .select2{
+    margin-bottom: 15px;
+  }
+  .form__input-town {
+    max-width: 280px;
+display: block;
+margin-bottom: 15px;
+}
+.check-wrapper label{
+  width: 185px;
+  margin-right: 15px;
+}
+.cost-link {
+  display: block;
+  margin-bottom: 15px;
+}
+.cost-wrapper {
+ 
+& button {
+  margin-bottom: 15px;
+}
+}
+  }
+
+  @media screen and (max-width: 515px) {
+    .form__input-town {width: calc(85%)}
+  .cost-wrapper {
+  & span {
+    position: absolute;
+    left: 2px;
+    top: -19px;
+  }
+  & label {
+    & input {
+      margin-left: 0px;
+    }
+    position: relative;
+    margin-bottom: 20px;
+  }}}

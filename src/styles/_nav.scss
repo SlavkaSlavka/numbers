@@ -57,3 +57,13 @@ li .nav-link {
 .nav-link-center {
   padding-left: 0;
 }
+@media screen and (max-width: 770px) { 
+
+ .nav-list {
+   display: flex;
+   margin-left: auto;
+ }
+ .navigation .btn-nav {
+   margin-left:  auto; 
+ }
+}

@@ -18,16 +18,16 @@
         <!-- page header -->
         <header class="header">
           <div class="container">
-            <nav class="navbar navbar-light">
+            <nav class="navbar navbar-light navigation">
               
-<a class="navbar-brand mr-auto" href="#">Лого</a>
+<a class="navbar-brand mr-auto logo" href="#">Лого</a>
 
-              <ul class="nav" >
+              <ul class="nav nav-list" >
                 
                 <li class="nav-item"><a href="#" class="nav-link nav-link-user">Регистрация</a></li>
                 <li  class="nav-item nav-item-center"><a href="#" class="nav-link nav-link-center">Вход</a></li>
-              <li><button type="button" class="btn btn-blue">Добавить объявлениe</button></li>
               </ul>
+              <button type="button" class="btn btn-blue btn-nav">Добавить объявлениe</button>
               
               
               
@@ -64,12 +64,11 @@
               <form class="filter__form form">
                 <h2>Фильтр</h2>
                 <div class="select-wrapper">
-                <select class="form__input-town" name="Town">
-                  <option value="moscov">Москва</option>
-                  <option value="Piter">Питер</option>
-                  <option value="Sochi">Сочи</option>
-                  <option value="Kazan">Казань</option>
-                </select>
+                <button data-target="#exampleModal" data-toggle="modal" type="button" class="form__input-town" name="Town">
+    Выберите город <span><svg width="10" height="10" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12 3.5H0L6 10.5L12 3.5Z" fill="#4F4F4F"/>
+      </svg></span>
+                </button>
                 <select class="form__input" name="letter-1">
                   <option value="A">A</option>
                   <option value="B">B</option>
@@ -128,6 +127,7 @@
                   <label for="not older than 6 months">Не старше 6 месяцев</label>
                 </div>
                 <div class="cost-wrapper">
+            
                   <label>
                   <span>Цена от</span>
                     <input type="text" name="cost from" />
@@ -136,10 +136,13 @@
                     <span> До</span>
                     <input type="text" name="cost to" />
                   </label>
+                
+                
                   <a data-target="#exampleModal1" data-toggle="modal"  class="cost-link">Быстрый переход</a>
                   <button class="btn btn-blue">Показать</button>
                   <button class="btn btn-white">Сбросить</button>
-                </div>
+               
+              </div>
                 
               </form>
             </div>
@@ -364,13 +367,13 @@
                     </clipPath>
                   </defs>
                 </svg></span>
-                  <img src="./images/slider/carNumber.jpg"><div class="list_item-wrapper"><span>М123СК777</span><span class="list_item-cost">255 000 Р</span></div>
+                  <img src="./images/slider/carNumber.jpg"><div class="list_item-wrapper"><span>М123СК777</span><span class="list_item-cost">255000Р</span></div>
                 </li>
                 <li class="slider__list_item">
-                  <img src="./images/slider/carNumber.jpg"><div class="list_item-wrapper"><span>Н681ТВ150</span><span class="list_item-cost">455 000 Р</span></div>
+                  <img src="./images/slider/carNumber.jpg"><div class="list_item-wrapper"><span>Н681ТВ150</span><span class="list_item-cost">455000Р</span></div>
                 </li>
                 <li class="slider__list_item">
-                  <img src="./images/slider/carNumber.jpg"><div class="list_item-wrapper"><span>У123СС177</span><span class="list_item-cost">25 0000 Р</span></div>
+                  <img src="./images/slider/carNumber.jpg"><div class="list_item-wrapper"><span>У123СС177</span><span class="list_item-cost">250000Р</span></div>
                 </li>
                 <li class="slider__list_item position-wrapper"><span class="position-span-right"><svg width="20" height="20" viewBox="0 0 12 11" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <g clip-path="url(#clip0)">
@@ -384,7 +387,7 @@
                   </defs>
                 </svg></span>
                   <img src="./images/slider/carNumber.jpg">
-                  <div class="list_item-wrapper"><span>М123СК777</span><span class="list_item-cost">355 000 Р</span></div>
+                  <div class="list_item-wrapper"><span>М123СК777</span><span class="list_item-cost">355000Р</span></div>
                 </li>
               </ul>
             </div>
@@ -402,96 +405,96 @@
                 </div>
                 <div class="modal-body modal-body-town">
                   <ul class="modal-text list">
-                    <li><a>Все регионы</a></li>
-                    <li><a>Москва</a></li>
-                    <li><a>Московская область</a></li>
-                    <li><a>Санкт-Петербург</a></li>
-                    <li><a>Адыгея</a></li>
-                    <li><a>Алтай</a></li>
-                    <li><a>Алтайский край</a></li>
-                    <li><a>Амурская область</a></li>
-                    <li><a>Архангельская область</a></li>
-                    <li><a>Астраханская область</a></li>
-                    <li><a>Башкортостан</a></li>
-                    <li><a>Белгородская область</a></li>
-                    <li><a>Брянская область</a></li>
-                    <li><a>Бурятия</a></li>
-                    <li><a>Владимирская область</a></li>
-                    <li><a>Волгоградская область</a></li>
-                    <li><a>Вологодская область</a></li>
-                    <li><a>Воронежская область</a></li>
-                    <li><a>Дагестан</a></li>
-                    <li><a>Еврейская автономная область</a></li>
-                    <li><a>Забайкальский край</a></li>
-                    <li><a>Ивановская область</a></li>
-                    <li><a>Ингушетия</a></li>
-                    <li><a>Иркутская область</a></li>
-                    <li><a>Кабардино-Балкария</a></li>
-                    <li><a>Калининградская область</a></li>
-                    <li><a>Калмыкия</a></li>
-                    <li><a>Калужская область</a></li>
-                    <li><a>Камчатский край</a></li>
+                    <li><a href="#">Все регионы</a></li>
+                    <li><a href="#">Москва</a></li>
+                    <li><a href="#">Московская область</a></li>
+                    <li><a href="#">Санкт-Петербург</a></li>
+                    <li><a href="#">Адыгея</a></li>
+                    <li><a href="#">Алтай</a></li>
+                    <li><a href="#">Алтайский край</a></li>
+                    <li><a href="#">Амурская область</a></li>
+                    <li><a href="#">Архангельская область</a></li>
+                    <li><a href="#">Астраханская область</a></li>
+                    <li><a href="#">Башкортостан</a></li>
+                    <li><a href="#">Белгородская область</a></li>
+                    <li><a href="#">Брянская область</a></li>
+                    <li><a href="#">Бурятия</a></li>
+                    <li><a href="#">Владимирская область</a></li>
+                    <li><a href="#">Волгоградская область</a></li>
+                    <li><a href="#">Вологодская область</a></li>
+                    <li><a href="#">Воронежская область</a></li>
+                    <li><a href="#">Дагестан</a></li>
+                    <li><a href="#">Еврейская автономная область</a></li>
+                    <li><a href="#">Забайкальский край</a></li>
+                    <li><a href="#">Ивановская область</a></li>
+                    <li><a href="#">Ингушетия</a></li>
+                    <li><a href="#">Иркутская область</a></li>
+                    <li><a href="#">Кабардино-Балкария</a></li>
+                    <li><a href="#">Калининградская область</a></li>
+                    <li><a href="#">Калмыкия</a></li>
+                    <li><a href="#">Калужская область</a></li>
+                    <li><a href="#">Камчатский край</a></li>
                   </ul>
                     <ul class="modal-text list">
-                      <a>Карачаево-Черкессия</a>
-<li><a>Карелия</a></li>
-<li><a>Кемеровская область</a></li>
-<li><a>Кировская область</a></li>
-<li><a>Коми</a></li>
-<li><a>Костромская область</a></li>
-<li><a>Краснодарский край</a></li>
-<li><a>Красноярский край</a></li>
-<li><a>Курганская область</a></li>
-<li><a>Курская область</a></li>
-<li><a>Ленинградская область</a></li>
-<li><a>Липецкая область</a></li>
-<li><a>Магаданская область</a></li>
-<li><a>Марий Эл</a></li>
-<li><a>Мордовия</a></li>
-<li><a>Мурманская область</a></li>
-<li><a>Ненецкий АО</a></li>
-<li><a>Нижегородская область</a></li>
-<li><a>Новгородская область</a></li>
-<li><a>Новосибирская область</a></li>
-<li><a>Омская область</a></li>
-<li><a>Оренбургская область</a></li>
-<li><a>Орловская область</a></li>
-<li><a>Пензенская область</a></li>
-<li><a>Пермский край</a></li>
-<li><a>Приморский край</a></li>
-<li><a>Псковская область</a></li>
-<li><a>Республика Крым</a></li>
-<li><a>Ростовская область</a></li>
+                     <li><a>Карачаево-Черкессия</a></li> 
+<li><a href="#" >Карелия</a></li>
+<li><a href="#" >Кемеровская область</a></li>
+<li><a href="#" >Кировская область</a></li>
+<li><a href="#" >Коми</a></li>
+<li><a href="#" >Костромская область</a></li>
+<li><a href="#" >Краснодарский край</a></li>
+<li><a href="#" >Красноярский край</a></li>
+<li><a href="#" >Курганская область</a></li>
+<li><a href="#" >Курская область</a></li>
+<li><a href="#" >Ленинградская область</a></li>
+<li><a href="#" >Липецкая область</a></li>
+<li><a href="#" >Магаданская область</a></li>
+<li><a href="#" >Марий Эл</a></li>
+<li><a href="#" >Мордовия</a></li>
+<li><a href="#" >Мурманская область</a></li>
+<li><a href="#" >Ненецкий АО</a></li>
+<li><a href="#" >Нижегородская область</a></li>
+<li><a href="#" >Новгородская область</a></li>
+<li><a href="#" >Новосибирская область</a></li>
+<li><a href="#" >Омская область</a></li>
+<li><a href="#" >Оренбургская область</a></li>
+<li><a href="#" >Орловская область</a></li>
+<li><a href="#" >Пензенская область</a></li>
+<li><a href="#" >Пермский край</a></li>
+<li><a href="#" >Приморский край</a></li>
+<li><a href="#" >Псковская область</a></li>
+<li><a href="#" >Республика Крым</a></li>
+<li><a href="#" >Ростовская область</a></li>
                     </ul>
                     <ul class="modal-text list">
                       <li><a>Рязанская область</a></li>
-<li><a>Самарская область</a></li>
-<li><a>Саратовская область</a></li>
-<li><a>Саха (Якутия)</a></li>
-<li><a>Сахалинская область</a></li>
-<li><a>Свердловская область</a></li>
-<li><a>Севастополь</a></li>
-<li><a>Северная Осетия</a></li>
-<li><a>Смоленская область</a></li>
-<li><a>Ставропольский край</a></li>
-<li><a>Тамбовская область</a></li>
-<li><a>Татарстан</a></li>
-<li><a>Тверская область</a></li>
-<li><a>Томская область</a></li>
-<li><a>Тульская область</a></li>
-<li><a>Тыва</a></li>
-<li><a>Тюменская область</a></li>
-<li><a>Удмуртия</a></li>
-<li><a>Ульяновская область</a></li>
-<li><a>Хабаровский край</a></li>
-<li><a>Хакасия</a></li>
-<li><a>Ханты-Мансийский АО - Югра</a></li>
-<li><a>Челябинская область</a></li>
-<li><a>Чечня</a></li>
-<li><a>Чувашия</a></li>
-<li><a>Чукотский АО</a></li>
-<li><a>Ямало-Ненецкий АО</a></li>
-<li><a>Ярославская область</a></li>
+<li><a href="#">Самарская область</a></li>
+<li><a href="#">Саратовская область</a></li>
+<li><a href="#">Саха (Якутия)</a></li>
+<li><a href="#">Сахалинская область</a></li>
+<li><a href="#">Свердловская область</a></li>
+<li><a href="#">Севастополь</a></li>
+<li><a href="#">Северная Осетия</a></li>
+<li><a href="#">Смоленская область</a></li>
+<li><a href="#">Ставропольский край</a></li>
+<li><a href="#">Тамбовская область</a></li>
+<li><a href="#">Татарстан</a></li>
+<li><a href="#">Тверская область</a></li>
+<li><a href="#">Томская область</a></li>
+<li><a href="#">Тульская область</a></li>
+<li><a href="#">Тыва</a></li>
+<li><a href="#">Тюменская область</a></li>
+<li><a href="#">Удмуртия</a></li>
+<li><a href="#">Ульяновская область</a></li>
+<li><a href="#">Хабаровский край</a></li>
+<li><a href="#">Хакасия</a></li>
+<li><a href="#">Ханты-Мансийский АО - Югра</a></li>
+<li><a href="#">Челябинская область</a></li>
+<li><a href="#">Чечня</a></li>
+<li><a href="#">Чувашия</a></li>
+<li><a href="#">Чукотский АО</a></li>
+<li><a href="#">Ямало-Ненецкий АО</a></li>
+<li><a href="#">Ярославская область</a></li>
                     </ul>
                 </div>
               </div>
@@ -501,7 +504,7 @@
       <footer class="footer">
         <div class="container">
           <ul class="footer__list list">
-          <li class="footer__list_item-policy"><a  data-target="#exampleModal" data-toggle="modal" href="#">Политика конфиденциальности</a></li>
+          <li class="footer__list_item-policy"><a href="#">Политика конфиденциальности</a></li>
           <li class="footer__list_item-date">© 2020 Все права защищены</li>
         </ul>
         </div>
@@ -522,45 +525,45 @@
          <ul class="modal-quick-list list">
            <li><ul class="list ">
              <li><h6>Десятка</h6></li>
-             <li><a>*001 **</a></li>
-             <li><a>*002 **</a></li>
-             <li><a>*003 **</a></li>
-             <li><a>*004 **</a></li>
-             <li><a>*005 **</a></li>
-             <li><a>*006 **</a></li>
-             <li><a>*007 **</a></li>
-             <li><a>*008 **</a></li>
-             <li><a>*009 **</a></li>
+             <li><a href="#">*001 **</a></li>
+             <li><a href="#">*002 **</a></li>
+             <li><a href="#">*003 **</a></li>
+             <li><a href="#">*004 **</a></li>
+             <li><a href="#">*005 **</a></li>
+             <li><a href="#">*006 **</a></li>
+             <li><a href="#">*007 **</a></li>
+             <li><a href="#">*008 **</a></li>
+             <li><a href="#">*009 **</a></li>
 
            </ul></li>
            <li><ul class="list ">
              <li><h6>Цифры</h6></li>
-             <li><a>*111 **</a></li>
-             <li><a>*222 **</a></li>
-             <li><a>*333 **</a></li>
-             <li><a>*444 **</a></li>
-             <li><a>*555 **</a></li>
-             <li><a>*666 **</a></li>
-             <li><a>*777 **</a></li>
-             <li><a>*888 **</a></li>
-             <li><a>*999 **</a></li>
+             <li><a href="#">*111 **</a></li>
+             <li><a href="#">*222 **</a></li>
+             <li><a href="#">*333 **</a></li>
+             <li><a href="#">*444 **</a></li>
+             <li><a href="#">*555 **</a></li>
+             <li><a href="#">*666 **</a></li>
+             <li><a href="#">*777 **</a></li>
+             <li><a href="#">*888 **</a></li>
+             <li><a href="#">*999 **</a></li>
         
 
            </ul></li>
            <li><ul class="list ">
              <li><h6>Буквы</h6></li>
-             <li><a>А***АА</a></li>
-             <li><a>В***ВВ</a></li>
-             <li><a>Е***ЕЕ</a></li>
-             <li><a>К***КК</a></li>
-             <li><a>М***ММ</a></li>
-             <li><a>Н***НН</a></li>
-             <li><a>О***ОО</a></li>
-             <li><a>Р***РР</a></li>
-             <li><a>С***СС</a></li>
-             <li><a>Т***ТТ</a></li>
-             <li><a>У***УУ</a></li>
-             <li><a>Х***ХХ</a></li>
+             <li><a href="#">А***АА</a></li>
+             <li><a href="#">В***ВВ</a></li>
+             <li><a href="#">Е***ЕЕ</a></li>
+             <li><a href="#">К***КК</a></li>
+             <li><a href="#">М***ММ</a></li>
+             <li><a href="#">Н***НН</a></li>
+             <li><a href="#">О***ОО</a></li>
+             <li><a href="#">Р***РР</a></li>
+             <li><a href="#">С***СС</a></li>
+             <li><a href="#">Т***ТТ</a></li>
+             <li><a href="#">У***УУ</a></li>
+             <li><a href="#">Х***ХХ</a></li>
         
 
            </ul></li>
