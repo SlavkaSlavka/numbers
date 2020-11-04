@@ -127,6 +127,10 @@ body .select2-selection__rendered {
   z-index: -1;
   opacity: 0;
   }
+  .select2-container--focus {
+font-weight: 600;
+
+  }
 .form__input-check+label {
   cursor: pointer;
   display: inline-flex;
