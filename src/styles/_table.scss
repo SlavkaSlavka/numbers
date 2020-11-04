@@ -15,6 +15,9 @@
     background-color: $global-link-color;
   }
   &__list {
+    & li {
+      min-width: 150px;
+    }
     &_item {
       color: #828282;
     }
@@ -121,4 +124,15 @@
     
 
   }
+}
+.table__item {
+&-number {
+ 
+    min-width: 250px;
+  }
+  
+}
+.table {
+&__item-photo {min-width: 150px;}
+&__item-cost {min-width: 100px;}
 }
