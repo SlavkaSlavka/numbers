@@ -120,6 +120,9 @@ body .select2-selection__rendered {
   text-transform: uppercase;
 }
 .form__input-check {
+  &:focus+label::before {
+    border: 1px solid $global-link-color;
+  }
   position: absolute;
   z-index: -1;
   opacity: 0;
