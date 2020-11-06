@@ -1,10 +1,17 @@
 .table-section {
   background-color: $global-background-color;
 }
+
+.table-responsive {
+  margin-bottom: 1rem;
+}
+
 .table {
+  margin-bottom: 0;
+  border: 1px solid #dddddd;
+
   &__photo a:hover, &__photo a:focus { outline: none; color:  $hover-color;}
   &__item {
-    border: 1px solid #dddddd;
     border-radius: 5px;
     background-color: $secondary-background-color;
   }
