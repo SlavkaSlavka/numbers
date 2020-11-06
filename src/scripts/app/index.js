@@ -1,5 +1,3 @@
-import 'slick-carousel';
-
 $(() => {
   // slider
   (() => {
@@ -26,6 +24,6 @@ $(() => {
         },
       ],
     };
-    const $slider = $('.slider').slick(options);
+    const $slider = $('.slider__body').slick(options);
   })();
 });
