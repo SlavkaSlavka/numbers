@@ -10,7 +10,11 @@
   margin-bottom: 0;
   border: 1px solid #dddddd;
 
-  &__photo a:hover, &__photo a:focus { outline: none; color:  $hover-color;}
+  &__photo a:hover,
+  &__photo a:focus {
+    outline: none;
+    color: $hover-color;
+  }
   &__item {
     border-radius: 5px;
     background-color: $secondary-background-color;
@@ -40,15 +44,17 @@
   &__number img {
     max-width: 185px;
   }
-  &__number::after {
-    content: "";
-    display: inline-block;
-    margin-left: 15px;
-    vertical-align: middle;
-    width: 20px;
-    height: 20px;
-    background-image: url("../images/table/crown.svg");
-    background-size: contain;
+  &__number {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    & svg {
+      display: inline-flex;
+      justify-content: flex-end;
+      width: 20px;
+      height: 20px;
+      margin-left: 15px;
+    }
   }
   &__seller {
     font-family: $secondary-font-family;
@@ -60,14 +66,6 @@
   &__item-cost {
     font-family: $secondary-font-family;
     font-weight: 500;
-  }
-  &__false-photo_link {
-    &:hover,
-    :focus {
-      outline: none;
-      color: #828282;
-    }
-    color: #828282;
   }
 }
 .table-striped tbody tr:nth-of-type(odd) {
@@ -88,7 +86,8 @@
   justify-content: center;
   align-items: center;
   &_item {
-    &:hover a,a:focus {
+    &:hover a,
+    a:focus {
       color: $global-link-color;
       outline: none;
     }
@@ -119,7 +118,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-    color: white;
+      color: white;
     }
   }
 }
@@ -127,26 +126,47 @@
   background-color: $global-link-color;
   border: none;
   &:hover span,
-  :focus span{
-    background: #ffffff;;
+  :focus span {
+    background: #ffffff;
     color: #4f4f4f;
   }
-  &:hover ,
+  &:hover,
   :focus {
     background: #ffffff;
     border: 1px solid #dddddd;
-    
-
   }
 }
 .table__item {
-&-number {
- 
+  &-number {
     min-width: 250px;
   }
-  
 }
 .table {
-&__item-photo {min-width: 150px;}
-&__item-cost {min-width: 100px;}
+  &__item-photo {
+    min-width: 150px;
+  }
+  &__item-cost {
+    min-width: 100px;
+  }
+}
+.table__item-photo {
+  & svg {
+    margin-right: 10px;
+  }
+  color: $global-link-color;
+}
+.false-photo {
+  color: #828282;
+}
+
+.table {
+  border: none;
+
+  & tr {
+    border: none;
+    & td,
+    & th {
+      border: none;
+    }
+  }
 }

@@ -2,24 +2,16 @@
   font-family: $secondary-font-family;
   display: inline-block;
 }
-.slider__list {
-  display: flex;
-  &_item {
-    border-radius: 5px;
-    border: 1px solid #dddddd;
-    background-color: #fff;
-    &:not(:last-child) {
-      margin-right: 30px;
-    }
-  }
-}
+
 .list_item-wrapper {
+  font-family: $secondary-font-family;
   flex-basis: 50%;
   width: 100%;
   display: flex;
   justify-content: space-around;
   flex-wrap: nowrap;
-
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .slider__title {
   margin-bottom: 25px;
@@ -32,32 +24,82 @@
   font-size: 18px;
   line-height: 1.17;
 }
-.position-wrapper {
-  position: relative;
+
+.slick-prev:before,
+.slick-next:before {
+  display: none;
 }
-.position-wrapper .position-span-right,
-.position-wrapper .position-span-left {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 48px;
-  height: 48px;
-  position: absolute;
-  border: 1px solid #dddddd;
+.slick-prev,
+.slick-next {
+  &:hover,
+  &:focus {
+    z-index: 1;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #fff;
+  }
+  border: 1px solid #828282;
+  z-index: 1;
   border-radius: 50%;
-  transition: all 100ms ease-in;
-  &:hover {
-    color: $global-link-color;
-    border: 1px solid $global-link-color;
+  width: 45px;
+  height: 45px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #fff;
+}
+.slick-slide {
+  &:not(:last-child) {
+    margin-right: 10px;
+    margin-left: 5px;
+  }
+  border-radius: 5px;
+  border: 1px solid #dddddd;
+  background-color: #fff;
+}
+.slick-next {
+  right: -40px;
+  background-image: url("../images/slider/arrig.svg");
+  &:hover,
+  &:focus {
+    background-image: url("../images/slider/arrig.svg");
   }
 }
-.position-wrapper .position-span-left {
-  left: -65px;
-  bottom: 50%;
+.slick-prev {
+  left: -50px;
+  &:hover,
+  &:focus {
+    background-image: url("../images/slider/arlef.svg");
+  }
+  background-image: url("../images/slider/arlef.svg");
 }
-.position-wrapper .position-span-right {
-  right: -65px;
-  bottom: 50%;
-}
+@media screen and (max-width: 650px) {
+  .slick-slide img {
+    width: 100%;
+    margin: 0 auto;
+  }
 
+  .slick-prev {
+    left: 6px;
+    top: 45%;
+  }
+  .slick-next {
+    right: 11px;
+    top: 45%;
+  }
+  .slick-prev,
+  .slick-next {
+    opacity: 40%;
+    &:active {
+      opacity: 90%;
+    }
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 800px) {
+  .list_item-wrapper,
+  .list_item-cost {
+    font-size: 14px;
+  }
+}
