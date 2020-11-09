@@ -27,7 +27,14 @@
 
 .slick-prev:before,
 .slick-next:before {
-  display: none;
+  display: block;
+  margin-left: 3px;
+  margin-bottom: 3px;
+  color:inherit;
+  content: '\2199';
+  font-size: 34px;
+  transform: rotate(50deg);
+  font-weight: bold;
 }
 .slick-prev,
 .slick-next {
@@ -74,9 +81,7 @@
   &:hover,
   &:focus {
     color: $global-link-color;
-    background-image: url("../images/slider/arlefAkc.svg");
   }
-  background-image: url("../images/slider/arlef.svg");
 }
 @media screen and (max-width: 650px) {
   .slick-slide img {
