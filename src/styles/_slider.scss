@@ -25,37 +25,40 @@
   line-height: 1.17;
 }
 
-.slick-prev:before,
-.slick-next:before {
+.slick-prev:before {
   display: block;
   margin-left: 3px;
   margin-bottom: 3px;
-  color:inherit;
-  content: '\2199';
+  content: "\2199";
   font-size: 34px;
   transform: rotate(50deg);
   font-weight: bold;
+  color: $global-font-color;
+}
+.slick-next:before {
+  display: block;
+  margin-right: 3px;
+  margin-top: 5px;
+  content: "\2199";
+  font-size: 34px;
+  transform: rotate(230deg);
+  font-weight: bold;
+  color: $global-font-color;
 }
 .slick-prev,
 .slick-next {
-  &:hover,
-  &:focus {
-    border: 1px solid $global-link-color;
-    z-index: 1;
-    border-radius: 50%;
-    width: 45px;
-    height: 45px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #fff;
+  &:hover::before {
+    color: $global-link-color;
+  }
+  &:hover {
+    border-color: $global-link-color;
+    color: $global-link-color;
   }
   border: 1px solid #828282;
   z-index: 1;
   border-radius: 50%;
   width: 45px;
   height: 45px;
-  background-repeat: no-repeat;
-  background-position: center;
   background-color: #fff;
 }
 .slick-slide {
@@ -69,11 +72,11 @@
 }
 .slick-next {
   right: -40px;
-  background-image: url("../images/slider/arrig.svg");
   &:hover,
   &:focus {
     color: $global-link-color;
-    background-image: url("../images/slider/arrigAkc.svg");
+    background-color: #fff;
+    z-index: 1;
   }
 }
 .slick-prev {
@@ -81,6 +84,8 @@
   &:hover,
   &:focus {
     color: $global-link-color;
+    background-color: #fff;
+    z-index: 1;
   }
 }
 @media screen and (max-width: 650px) {
