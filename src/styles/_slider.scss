@@ -33,6 +33,7 @@
 .slick-next {
   &:hover,
   &:focus {
+    border: 1px solid $global-link-color;
     z-index: 1;
     border-radius: 50%;
     width: 45px;
@@ -64,14 +65,16 @@
   background-image: url("../images/slider/arrig.svg");
   &:hover,
   &:focus {
-    background-image: url("../images/slider/arrig.svg");
+    color: $global-link-color;
+    background-image: url("../images/slider/arrigAkc.svg");
   }
 }
 .slick-prev {
   left: -50px;
   &:hover,
   &:focus {
-    background-image: url("../images/slider/arlef.svg");
+    color: $global-link-color;
+    background-image: url("../images/slider/arlefAkc.svg");
   }
   background-image: url("../images/slider/arlef.svg");
 }
