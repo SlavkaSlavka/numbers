@@ -8,7 +8,6 @@
 
 .table {
   margin-bottom: 0;
-  border: 1px solid #dddddd;
 
   &__photo a:hover,
   &__photo a:focus {
@@ -16,7 +15,6 @@
     color: $hover-color;
   }
   &__item {
-    border-radius: 5px;
     background-color: $secondary-background-color;
   }
   &__best-item td {
@@ -169,4 +167,35 @@
       border: none;
     }
   }
+}
+.table tr th {
+  &:last-child {
+    border-right: 1px solid #dddddd;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  &:first-child {
+    border-left: 1px solid #dddddd;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+}
+.table tr td {
+  border-bottom: 1px solid #dddddd;
+  &:last-child {
+    border-right: 1px solid #dddddd;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  &:first-child {
+    border-left: 1px solid #dddddd;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+}
+.table {
+  border-collapse: separate;
+  border-spacing: 0;
 }
