@@ -66,101 +66,787 @@
       </section>
 
       <!-- section -->
-      <section class="section filter">
-        <div class="container">
-          <form class="filter__form form">
-            <h2>Фильтр</h2>
-            <div class="select-wrapper">
-              <button data-target="#townsModal" data-toggle="modal" type="button" class="form__input-town"
-                      name="Town">
-                Выберите город <span><svg width="10" height="10" viewBox="0 0 12 14" fill="none"
-                                          xmlns="http://www.w3.org/2000/svg">
+
+        <section class="section filter">
+            <div class="container">
+
+                <form action="#" method="get" class="filter__form form">
+
+                    <div class="select-wrapper">
+
+                        <div class="row">
+                            <div class="col-auto">
+
+                                <div class="plate-wrap ">
+                                    <div class="inp-wrap">
+                                        <div class="dropdown">
+                                            <input type="text" id="numb-1" maxlength="1"
+                                                   value=""
+                                                   placeholder="a"
+                                                   class="filter-input"
+                                                   data-letters="1"
+                                                   data-nomer="1" data-toggle="dropdown"
+                                                   aria-haspopup="true" aria-expanded="false">
+                                            <ul class="dropdown-menu" aria-labelledby="numb-1">
+                                                <li data-value=""><a>*</a></li>
+                                                <li data-value="A"><a>А</a></li>
+                                                <li data-value="B"><a>В</a></li>
+                                                <li data-value="E"><a>Е</a></li>
+                                                <li data-value="K"><a>К</a></li>
+                                                <li data-value="M"><a>М</a></li>
+                                                <li data-value="H"><a>Н</a></li>
+                                                <li data-value="O"><a>О</a></li>
+                                                <li data-value="P"><a>Р</a></li>
+                                                <li data-value="C"><a>С</a></li>
+                                                <li data-value="T"><a>Т</a></li>
+                                                <li data-value="Y"><a>У</a></li>
+                                                <li data-value="X"><a>Х</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="dropdown">
+                                            <input type="text" id="numb-2" maxlength="1"
+                                                   value=""
+                                                   placeholder="0"
+                                                   class="filter-input"
+                                                   data-numbers="1"
+                                                   data-nomer="1" data-toggle="dropdown"
+                                                   aria-haspopup="true" aria-expanded="false">
+                                            <ul class="dropdown-menu" aria-labelledby="numb-2">
+                                                <li data-value=""><a>*</a></li>
+                                                <li data-value="0"><a>0</a></li>
+                                                <li data-value="1"><a>1</a></li>
+                                                <li data-value="2"><a>2</a></li>
+                                                <li data-value="3"><a>3</a></li>
+                                                <li data-value="4"><a>4</a></li>
+                                                <li data-value="5"><a>5</a></li>
+                                                <li data-value="6"><a>6</a></li>
+                                                <li data-value="7"><a>7</a></li>
+                                                <li data-value="8"><a>8</a></li>
+                                                <li data-value="9"><a>9</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="dropdown">
+                                            <input type="text" id="numb-3" maxlength="1"
+                                                   value=""
+                                                   placeholder="0"
+                                                   class="filter-input"
+                                                   data-numbers="1"
+                                                   data-nomer="1" data-toggle="dropdown"
+                                                   aria-haspopup="true" aria-expanded="false">
+                                            <ul class="dropdown-menu" aria-labelledby="numb-3">
+                                                <li data-value=""><a>*</a></li>
+                                                <li data-value="0"><a>0</a></li>
+                                                <li data-value="1"><a>1</a></li>
+                                                <li data-value="2"><a>2</a></li>
+                                                <li data-value="3"><a>3</a></li>
+                                                <li data-value="4"><a>4</a></li>
+                                                <li data-value="5"><a>5</a></li>
+                                                <li data-value="6"><a>6</a></li>
+                                                <li data-value="7"><a>7</a></li>
+                                                <li data-value="8"><a>8</a></li>
+                                                <li data-value="9"><a>9</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="dropdown">
+                                            <input type="text" id="numb-4" maxlength="1"
+                                                   value=""
+                                                   placeholder="0"
+                                                   class="filter-input"
+                                                   data-numbers="1"
+                                                   data-nomer="1" data-toggle="dropdown"
+                                                   aria-haspopup="true" aria-expanded="false">
+                                            <ul class="dropdown-menu" aria-labelledby="numb-4">
+                                                <li data-value=""><a>*</a></li>
+                                                <li data-value="0"><a>0</a></li>
+                                                <li data-value="1"><a>1</a></li>
+                                                <li data-value="2"><a>2</a></li>
+                                                <li data-value="3"><a>3</a></li>
+                                                <li data-value="4"><a>4</a></li>
+                                                <li data-value="5"><a>5</a></li>
+                                                <li data-value="6"><a>6</a></li>
+                                                <li data-value="7"><a>7</a></li>
+                                                <li data-value="8"><a>8</a></li>
+                                                <li data-value="9"><a>9</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="dropdown">
+                                            <input type="text" id="numb-5" maxlength="1"
+                                                   value=""
+                                                   placeholder="a"
+                                                   class="filter-input"
+                                                   data-letters="1"
+                                                   data-nomer="1" data-toggle="dropdown"
+                                                   aria-haspopup="true" aria-expanded="false">
+                                            <ul class="dropdown-menu" aria-labelledby="numb-5">
+                                                <li data-value=""><a>*</a></li>
+                                                <li data-value="A"><a>А</a></li>
+                                                <li data-value="B"><a>В</a></li>
+                                                <li data-value="E"><a>Е</a></li>
+                                                <li data-value="K"><a>К</a></li>
+                                                <li data-value="M"><a>М</a></li>
+                                                <li data-value="H"><a>Н</a></li>
+                                                <li data-value="O"><a>О</a></li>
+                                                <li data-value="P"><a>Р</a></li>
+                                                <li data-value="C"><a>С</a></li>
+                                                <li data-value="T"><a>Т</a></li>
+                                                <li data-value="Y"><a>У</a></li>
+                                                <li data-value="X"><a>Х</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="dropdown">
+                                            <input type="text" id="numb-6" maxlength="1"
+                                                   value=""
+                                                   placeholder="a"
+                                                   class="filter-input"
+                                                   data-letters="1"
+                                                   data-nomer="1" data-toggle="dropdown"
+                                                   aria-haspopup="true" aria-expanded="false">
+                                            <ul class="dropdown-menu" aria-labelledby="numb-6">
+                                                <li data-value=""><a>*</a></li>
+                                                <li data-value="A"><a>А</a></li>
+                                                <li data-value="B"><a>В</a></li>
+                                                <li data-value="E"><a>Е</a></li>
+                                                <li data-value="K"><a>К</a></li>
+                                                <li data-value="M"><a>М</a></li>
+                                                <li data-value="H"><a>Н</a></li>
+                                                <li data-value="O"><a>О</a></li>
+                                                <li data-value="P"><a>Р</a></li>
+                                                <li data-value="C"><a>С</a></li>
+                                                <li data-value="T"><a>Т</a></li>
+                                                <li data-value="Y"><a>У</a></li>
+                                                <li data-value="X"><a>Х</a></li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="dropdown region-wrap">
+                                            <input type="text" maxlength="3" value="" class="filter-input region-code"
+                                                   id="region-code" placeholder="77" readonly="true"
+                                                   data-numbers="1"
+                                                   data-region="1" data-toggle="dropdown" aria-haspopup="true"
+                                                   aria-expanded="false"
+                                                   onclick="showOtherRegion()">
+                                            <ul class="dropdown-menu" id="rcode-dropdown" aria-labelledby="region-code">
+                                                <li data-value=""><a>*</a></li>
+                                                <li data-value="77"><a>77</a></li>
+                                                <li data-value="97"><a>97</a></li>
+                                                <li data-value="99"><a>99</a></li>
+                                                <li data-value="177"><a>177</a></li>
+                                                <li data-value="197"><a>197</a></li>
+                                                <li data-value="199"><a>199</a></li>
+                                                <li data-value="777"><a>777</a></li>
+                                                <li data-value="797"><a>797</a></li>
+                                                <li data-value="799"><a>799</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col">
+                                <button data-target="#townsModal" data-toggle="modal" type="button" class="form__input-town"
+                                        name="Town">
+                                    Москва<span><svg width="10" height="10"
+                                                     viewBox="0 0 12 14"
+                                                     fill="none"
+                                                     xmlns="http://www.w3.org/2000/svg">
       <path d="M12 3.5H0L6 10.5L12 3.5Z" fill="#4F4F4F"/>
       </svg></span>
-              </button>
-              <select class="form__input" name="letter-1">
-                <option value="A">A</option>
-                <option value="B">B</option>
-                <option value="C">C</option>
-                <option value="H">H</option>
-              </select>
-              <select class="form__input" name="">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-              </select>
-              <select class="form__input" name="">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-              </select>
-              <select class="form__input" name="">
-                <option value="4">4</option>
-                <option value="3">3</option>
-                <option value="2">2</option>
-                <option value="1">1</option>
-              </select>
-              <select class="form__input" name="">
-                <option value="A">A</option>
-                <option value="B">B</option>
-                <option value="C">C</option>
-                <option value="H">H</option>
-              </select>
-              <select class="form__input" name="">
-                <option value="C">C</option>
-                <option value="H">H</option>
-                <option value="O">O</option>
-                <option value="B">B</option>
-              </select>
-              <select class="form__input" name="">
-                <option value="C">C</option>
-                <option value="B">B</option>
-                <option value="H">H</option>
-                <option value="P">P</option>
-              </select>
+                                </button>
+
+                                <a href="/" class="btn-reset d-none">
+                                    <svg width="16" height="16" viewBox="0 0 22 22" fill="#5185c7" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.5576 11L22 20.4424L20.4424 22L11 12.5576L1.55762 22L0 20.4424L9.44238 11L0 1.55762L1.55762 0L11 9.44238L20.4424 0L22 1.55762L12.5576 11Z" fill="#5185c7"></path>
+                                    </svg>Сбросить фильтр
+                                </a>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <div class="check-wrapper">
+
+                        <input class="form__input-check" id="identical_letters" name="identical_letters" type="checkbox"/>
+                        <label for="identical_letters">Одинаковые буквы</label>
+                        <input class="form__input-check" id="same_numbers" name="same_numbers" type="checkbox"/>
+                        <label for="same_numbers">Одинаковые цифры</label>
+                        <input class="form__input-check" id="first_ten" name="first_ten" type="checkbox" value="first ten"/>
+                        <label for="first_ten">Первая десятка</label>
+                        <input class="form__input-check" id="exact_hundred" name="exact_hundred" type="checkbox"/>
+                        <label for="exact_hundred">Ровная сотня</label>
+
+                    </div>
+                    <div class="text-center">
+                        <a href="#" id="show-advanced-search">
+                    <span><svg width="10" height="10"
+                               viewBox="0 0 12 14"
+                               fill="none"
+                               xmlns="http://www.w3.org/2000/svg">
+      <path d="M12 3.5H0L6 10.5L12 3.5Z" fill="#5284c7"/>
+      </svg></span>
+                            Расширенный поиск
+                            <span><svg width="10" height="10"
+                                       viewBox="0 0 12 14"
+                                       fill="none"
+                                       xmlns="http://www.w3.org/2000/svg">
+      <path d="M12 3.5H0L6 10.5L12 3.5Z" fill="#5284c7"/>
+      </svg></span>
+                        </a>
+                    </div>
+                    <div id="advanced-search" class="d-none">
+                        <input class="form__input-check" id="with_photo_only" name="with_photo_only" type="checkbox"/>
+                        <label for="with_photo_only">Только с фото</label>
+                        <input class="form__input-check" id="not_older" name="not_older" type="checkbox"/>
+                        <label for="not_older">Не старше 6 месяцев</label>
+
+                        <div class="cost-wrapper">
+
+                            <label>
+                                <span>Цена от</span>
+                                <input type="text" name="cost_from"/>
+                            </label>
+                            <label>
+                                <span> До</span>
+                                <input type="text" name="cost_to"/>
+                            </label>
+
+
+                            <a data-target="#numbersModal" data-toggle="modal" class="cost-link">Быстрый переход</a>
+
+
+                        </div>
+                    </div>
+
+
+                </form>
             </div>
-            <div class="check-wrapper">
-              <input class="form__input-check" id="identical letters" name="identical letters" type="checkbox"
-                     value="identical letters"/>
-              <label for="identical letters">Одинаковые буквы</label>
-              <input class="form__input-check" id="same numbers" name="same numbers" type="checkbox"
-                     value="same numbers"/>
-              <label for="same numbers">Одинаковые цифры</label>
-              <input class="form__input-check" id="first ten" name="first ten" type="checkbox" value="first ten"/>
-              <label for="first ten">Первая десятка</label>
-              <input class="form__input-check" id="exact hundred" name="exact hundred" type="checkbox"
-                     value="exact hundred"/>
-              <label for="exact hundred">Ровная сотня</label>
-              <input class="form__input-check" id="with photo only" name="with photo only" type="checkbox"
-                     value="with photo only"/>
-              <label for="with photo only">Только с фото</label>
-              <input class="form__input-check" id="not older than 6 months" name="not older than 6 months"
-                     type="checkbox" value="not older than 6 months"/>
-              <label for="not older than 6 months">Не старше 6 месяцев</label>
+        </section>
+
+        <div class="modal fade" id="townsModal" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-dialog-town">
+                <div class="modal-content">
+                    <div class="modal-header modal-header-town">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true"><svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                              xmlns="http://www.w3.org/2000/svg">
+                  <path
+                          d="M12.5576 11L22 20.4424L20.4424 22L11 12.5576L1.55762 22L0 20.4424L9.44238 11L0 1.55762L1.55762 0L11 9.44238L20.4424 0L22 1.55762L12.5576 11Z"
+                          fill="#828282"/>
+                  </svg></span>
+                        </button>
+                    </div>
+                    <div class="modal-body modal-body-town">
+                        <ul class="modal-text list">
+                            <li>
+                                <a href="/vse">
+                                    Любой регион                                </a>
+                            </li>
+
+                            <li>
+                                <a href="/moskva">
+                                    Москва                                </a>
+                            </li>
+
+                            <li>
+                                <a href="/moskovskaya-oblast">
+                                    Московская область                                </a>
+                            </li>
+
+                            <li>
+                                <a href="/sankt-peterburg">
+                                    Санкт-Петербург                                </a>
+                            </li>
+
+                            <li>
+                                <a href="/adygeya">
+                                    Адыгея                                </a>
+                            </li>
+
+                            <li>
+                                <a href="/altay">
+                                    Алтай                                </a>
+                            </li>
+
+                            <li>
+                                <a href="/altayskiy-kray">
+                                    Алтайский край                                </a>
+                            </li>
+
+                            <li>
+                                <a href="/amurskaya-oblast">
+                                    Амурская область                                </a>
+                            </li>
+
+                            <li>
+                                <a href="/arhangelskaya-oblast">
+                                    Архангельская область                                </a>
+                            </li>
+
+                            <li>
+                                <a href="/astrahanskaya-oblast">
+                                    Астраханская область                                </a>
+                            </li>
+
+                            <li>
+                                <a href="/bashkortostan">
+                                    Башкортостан                                </a>
+                            </li>
+
+                            <li>
+                                <a href="/belgorodskaya-oblast">
+                                    Белгородская область                                </a>
+                            </li>
+
+                            <li>
+                                <a href="/bryanskaya-oblast">
+                                    Брянская область                                </a>
+                            </li>
+
+                            <li>
+                                <a href="/buryatiya">
+                                    Бурятия                                </a>
+                            </li>
+
+                            <li>
+                                <a href="/vladimirskaya-oblast">
+                                    Владимирская область                                </a>
+                            </li>
+
+                            <li>
+                                <a href="/volgogradskaya-oblast">
+                                    Волгоградская область                                </a>
+                            </li>
+
+                            <li>
+                                <a href="/vologodskaya-oblast">
+                                    Вологодская область                                </a>
+                            </li>
+
+                            <li>
+                                <a href="/voronezhskaya-oblast">
+                                    Воронежская область                                </a>
+                            </li>
+
+                            <li>
+                                <a href="/dagestan">
+                                    Дагестан                                </a>
+                            </li>
+
+                            <li>
+                                <a href="/evreyskaya-avtonomnaya-oblast">
+                                    Еврейская автономная область                                </a>
+                            </li>
+
+                            <li>
+                                <a href="/zabaykalskiy-kray">
+                                    Забайкальский край                                </a>
+                            </li>
+
+                            <li>
+                                <a href="/ivanovskaya-oblast">
+                                    Ивановская область                                </a>
+                            </li>
+
+                            <li>
+                                <a href="/ingushetiya">
+                                    Ингушетия                                </a>
+                            </li>
+
+                            <li>
+                                <a href="/irkutskaya-oblast">
+                                    Иркутская область                                </a>
+                            </li>
+
+                            <li>
+                                <a href="/kabardino-balkariya">
+                                    Кабардино-Балкария                                </a>
+                            </li>
+
+                            <li>
+                                <a href="/kaliningradskaya-oblast">
+                                    Калининградская область                                </a>
+                            </li>
+
+                            <li>
+                                <a href="/kalmykiya">
+                                    Калмыкия                                </a>
+                            </li>
+
+                            <li>
+                                <a href="/kaluzhskaya-oblast">
+                                    Калужская область                                </a>
+                            </li>
+
+                            <li>
+                                <a href="/kamchatskiy-kray">
+                                    Камчатский край                                </a>
+                            </li>
+
+                        </ul><ul class="modal-text list">                            <li>
+                        <a href="/karachaevo-cherkessiya">
+                            Карачаево-Черкессия                                </a>
+                    </li>
+
+                        <li>
+                            <a href="/kareliya">
+                                Карелия                                </a>
+                        </li>
+
+                        <li>
+                            <a href="/kemerovskaya-oblast">
+                                Кемеровская область                                </a>
+                        </li>
+
+                        <li>
+                            <a href="/kirovskaya-oblast">
+                                Кировская область                                </a>
+                        </li>
+
+                        <li>
+                            <a href="/komi">
+                                Коми                                </a>
+                        </li>
+
+                        <li>
+                            <a href="/kostromskaya-oblast">
+                                Костромская область                                </a>
+                        </li>
+
+                        <li>
+                            <a href="/krasnodarskiy-kray">
+                                Краснодарский край                                </a>
+                        </li>
+
+                        <li>
+                            <a href="/krasnoyarskiy-kray">
+                                Красноярский край                                </a>
+                        </li>
+
+                        <li>
+                            <a href="/kurganskaya-oblast">
+                                Курганская область                                </a>
+                        </li>
+
+                        <li>
+                            <a href="/kurskaya-oblast">
+                                Курская область                                </a>
+                        </li>
+
+                        <li>
+                            <a href="/leningradskaya-oblast">
+                                Ленинградская область                                </a>
+                        </li>
+
+                        <li>
+                            <a href="/lipeckaya-oblast">
+                                Липецкая область                                </a>
+                        </li>
+
+                        <li>
+                            <a href="/magadanskaya-oblast">
+                                Магаданская область                                </a>
+                        </li>
+
+                        <li>
+                            <a href="/mariy-el">
+                                Марий Эл                                </a>
+                        </li>
+
+                        <li>
+                            <a href="/mordoviya">
+                                Мордовия                                </a>
+                        </li>
+
+                        <li>
+                            <a href="/murmanskaya-oblast">
+                                Мурманская область                                </a>
+                        </li>
+
+                        <li>
+                            <a href="/neneckiy-ao">
+                                Ненецкий АО                                </a>
+                        </li>
+
+                        <li>
+                            <a href="/nizhegorodskaya-oblast">
+                                Нижегородская область                                </a>
+                        </li>
+
+                        <li>
+                            <a href="/novgorodskaya-oblast">
+                                Новгородская область                                </a>
+                        </li>
+
+                        <li>
+                            <a href="/novosibirskaya-oblast">
+                                Новосибирская область                                </a>
+                        </li>
+
+                        <li>
+                            <a href="/omskaya-oblast">
+                                Омская область                                </a>
+                        </li>
+
+                        <li>
+                            <a href="/orenburgskaya-oblast">
+                                Оренбургская область                                </a>
+                        </li>
+
+                        <li>
+                            <a href="/orlovskaya-oblast">
+                                Орловская область                                </a>
+                        </li>
+
+                        <li>
+                            <a href="/penzenskaya-oblast">
+                                Пензенская область                                </a>
+                        </li>
+
+                        <li>
+                            <a href="/permskiy-kray">
+                                Пермский край                                </a>
+                        </li>
+
+                        <li>
+                            <a href="/primorskiy-kray">
+                                Приморский край                                </a>
+                        </li>
+
+                        <li>
+                            <a href="/pskovskaya-oblast">
+                                Псковская область                                </a>
+                        </li>
+
+                        <li>
+                            <a href="/respublika-krym">
+                                Республика Крым                                </a>
+                        </li>
+
+                        <li>
+                            <a href="/rostovskaya-oblast">
+                                Ростовская область                                </a>
+                        </li>
+
+                    </ul><ul class="modal-text list">                            <li>
+                        <a href="/ryazanskaya-oblast">
+                            Рязанская область                                </a>
+                    </li>
+
+                        <li>
+                            <a href="/samarskaya-oblast">
+                                Самарская область                                </a>
+                        </li>
+
+                        <li>
+                            <a href="/saratovskaya-oblast">
+                                Саратовская область                                </a>
+                        </li>
+
+                        <li>
+                            <a href="/saha-yakutiya">
+                                Саха (Якутия)                                </a>
+                        </li>
+
+                        <li>
+                            <a href="/sahalinskaya-oblast">
+                                Сахалинская область                                </a>
+                        </li>
+
+                        <li>
+                            <a href="/sverdlovskaya-oblast">
+                                Свердловская область                                </a>
+                        </li>
+
+                        <li>
+                            <a href="/sevastopol">
+                                Севастополь                                </a>
+                        </li>
+
+                        <li>
+                            <a href="/severnaya-osetiya">
+                                Северная Осетия                                </a>
+                        </li>
+
+                        <li>
+                            <a href="/smolenskaya-oblast">
+                                Смоленская область                                </a>
+                        </li>
+
+                        <li>
+                            <a href="/stavropolskiy-kray">
+                                Ставропольский край                                </a>
+                        </li>
+
+                        <li>
+                            <a href="/tambovskaya-oblast">
+                                Тамбовская область                                </a>
+                        </li>
+
+                        <li>
+                            <a href="/tatarstan">
+                                Татарстан                                </a>
+                        </li>
+
+                        <li>
+                            <a href="/tverskaya-oblast">
+                                Тверская область                                </a>
+                        </li>
+
+                        <li>
+                            <a href="/tomskaya-oblast">
+                                Томская область                                </a>
+                        </li>
+
+                        <li>
+                            <a href="/tulskaya-oblast">
+                                Тульская область                                </a>
+                        </li>
+
+                        <li>
+                            <a href="/tyva">
+                                Тыва                                </a>
+                        </li>
+
+                        <li>
+                            <a href="/tyumenskaya-oblast">
+                                Тюменская область                                </a>
+                        </li>
+
+                        <li>
+                            <a href="/udmurtiya">
+                                Удмуртия                                </a>
+                        </li>
+
+                        <li>
+                            <a href="/ulyanovskaya-oblast">
+                                Ульяновская область                                </a>
+                        </li>
+
+                        <li>
+                            <a href="/habarovskiy-kray">
+                                Хабаровский край                                </a>
+                        </li>
+
+                        <li>
+                            <a href="/hakasiya">
+                                Хакасия                                </a>
+                        </li>
+
+                        <li>
+                            <a href="/hanty-mansiyskiy-avtonomnyy-okrug---yugra">
+                                Ханты-Мансийский АО - Югра                                </a>
+                        </li>
+
+                        <li>
+                            <a href="/chelyabinskaya-oblast">
+                                Челябинская область                                </a>
+                        </li>
+
+                        <li>
+                            <a href="/chechnya">
+                                Чечня                                </a>
+                        </li>
+
+                        <li>
+                            <a href="/chuvashiya">
+                                Чувашия                                </a>
+                        </li>
+
+                        <li>
+                            <a href="/chukotskiy-avtonomnyy-okrug">
+                                Чукотский АО                                </a>
+                        </li>
+
+                        <li>
+                            <a href="/yamalo-neneckiy-ao">
+                                Ямало-Ненецкий АО                                </a>
+                        </li>
+
+                        <li>
+                            <a href="/yaroslavskaya-oblast">
+                                Ярославская область                                </a>
+                        </li>
+
+                    </ul>
+                    </div>
+                </div>
             </div>
-            <div class="cost-wrapper">
-
-              <label>
-                <span>Цена от</span>
-                <input type="text" name="cost from"/>
-              </label>
-              <label>
-                <span> До</span>
-                <input type="text" name="cost to"/>
-              </label>
-
-
-              <a data-target="#numbersModal" data-toggle="modal" class="cost-link">Быстрый переход</a>
-              <button class="btn btn-blue">Показать</button>
-              <button class="btn btn-white">Сбросить</button>
-
-            </div>
-
-          </form>
         </div>
-      </section>
+
+        <div class="modal fade" id="numbersModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog modal-dialog-quick">
+                <div class="modal-content">
+                    <div class="modal-header modal-header-quick">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true"><svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                <path
+                        d="M12.5576 11L22 20.4424L20.4424 22L11 12.5576L1.55762 22L0 20.4424L9.44238 11L0 1.55762L1.55762 0L11 9.44238L20.4424 0L22 1.55762L12.5576 11Z"
+                        fill="#828282"/>
+                </svg></span>
+                        </button>
+                    </div>
+                    <div class="modal-body modal-body-quick">
+                        <h5 class="modal-title-quick">Госномера за последние 6 месяцев</h5>
+                        <ul class="modal-quick-list list">
+                            <li>
+                                <ul class="list ">
+                                    <li><h6>Десятка</h6></li>
+                                    <li><a href="#">*001 **</a></li>
+                                    <li><a href="#">*002 **</a></li>
+                                    <li><a href="#">*003 **</a></li>
+                                    <li><a href="#">*004 **</a></li>
+                                    <li><a href="#">*005 **</a></li>
+                                    <li><a href="#">*006 **</a></li>
+                                    <li><a href="#">*007 **</a></li>
+                                    <li><a href="#">*008 **</a></li>
+                                    <li><a href="#">*009 **</a></li>
+
+                                </ul>
+                            </li>
+                            <li>
+                                <ul class="list ">
+                                    <li><h6>Цифры</h6></li>
+                                    <li><a href="#">*111 **</a></li>
+                                    <li><a href="#">*222 **</a></li>
+                                    <li><a href="#">*333 **</a></li>
+                                    <li><a href="#">*444 **</a></li>
+                                    <li><a href="#">*555 **</a></li>
+                                    <li><a href="#">*666 **</a></li>
+                                    <li><a href="#">*777 **</a></li>
+                                    <li><a href="#">*888 **</a></li>
+                                    <li><a href="#">*999 **</a></li>
+
+                                </ul>
+                            </li>
+                            <li>
+                                <ul class="list ">
+                                    <li><h6>Буквы</h6></li>
+                                    <li><a href="#">А***АА</a></li>
+                                    <li><a href="#">В***ВВ</a></li>
+                                    <li><a href="#">Е***ЕЕ</a></li>
+                                    <li><a href="#">К***КК</a></li>
+                                    <li><a href="#">М***ММ</a></li>
+                                    <li><a href="#">Н***НН</a></li>
+                                    <li><a href="#">О***ОО</a></li>
+                                    <li><a href="#">Р***РР</a></li>
+                                    <li><a href="#">С***СС</a></li>
+                                    <li><a href="#">Т***ТТ</a></li>
+                                    <li><a href="#">У***УУ</a></li>
+                                    <li><a href="#">Х***ХХ</a></li>
+
+                                </ul>
+                            </li>
+                        </ul>
+                        <div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
       <section class="section table-section">
         <div class="container">
           <div class="table-responsive">

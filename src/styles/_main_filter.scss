@@ -1,0 +1,240 @@
+$primary: #5185c7;
+
+#show-advanced-search{
+  font-weight: 600;
+  > span{
+    margin: 0 6px;
+  }
+  &:hover{
+    text-decoration: none;
+  }
+}
+
+.btn-reset{
+  display: inline-block;
+  margin: 15px 0 0 0;
+  font-weight: 600;
+  svg{
+    margin-right: 10px;
+  }
+}
+
+#advanced-search{
+  label{
+    font-size: 16px;
+    line-height: 19px;
+    position: relative;
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
+  }
+}
+
+.plate-wrap {
+  background: url('/images/plate.png') no-repeat;
+  height: 101px;
+  width: 451px;
+  position: relative;
+  display: block;
+
+  .inp-wrap {
+    position: absolute;
+    left: 35px;
+    bottom: 15px;
+    line-height: 1;
+    width: 400px;
+    overflow: visible;
+
+    > .dropdown {
+      width: 45px;
+      line-height: 1;
+      display: inline-block;
+
+      vertical-align: bottom;
+      position: relative;
+
+      &.region-wrap {
+        bottom: 20px;
+        margin-left: 18px;
+      }
+
+      ul {
+        width: 50px;
+        min-width: 50px;
+        text-align: center;
+
+        li {
+          display: block;
+          width: 100%;
+          padding: 5px 0;
+          font-size: 14px;
+          &:hover {
+            background: lighten($primary, 40%);
+          }
+        }
+      }
+
+    }
+  }
+
+
+}
+
+
+.filter-input::-webkit-input-placeholder {
+  opacity: 0.3;
+  overflow: visible;
+}
+
+.filter-input::-moz-placeholder {
+  opacity: 0.3;
+  overflow: visible;
+}
+
+.filter-input:-moz-placeholder {
+  opacity: 0.3;
+  overflow: visible;
+}
+
+.filter-input:-ms-input-placeholder {
+  opacity: 0.3;
+  overflow: visible;
+}
+
+.filter-input {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  bottom: 0;
+  text-align: center;
+  cursor: pointer;
+  overflow: visible;
+  font-family: 'RoadNumbers', sans-serif;
+  font-size: 90px;
+  line-height: normal;
+  padding: 0;
+  background-color: transparent;
+  width: 45px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  height: 76px;
+  appearance: none;
+  border-bottom: 2px solid;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  color: black;
+  text-shadow: 2px 1px 2px rgba(150, 150, 150, 1);
+}
+
+
+.region-code {
+  position: relative;
+  text-align: center;
+  font-family: 'RoadNumbers', sans-serif;
+  font-size: 70px;
+  padding: 0;
+  overflow: visible;
+  background-color: transparent;
+  width: 90px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  height: 55px;
+  appearance: none;
+  border-bottom: 2px solid;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  color: black;
+  text-shadow: 2px 1px 2px rgba(150, 150, 150, 1);
+}
+
+.filter-input > select {
+  display: none;
+}
+
+.variants {
+  margin: 15px;
+}
+
+.table-cell {
+  display: table-cell;
+  width: 50%;
+}
+
+.region {
+  margin-top: 5px;
+}
+
+.control-btns {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.btn-div {
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.btn-div img {
+  margin-right: 5px;
+}
+
+.table-bordered {
+  border: 1px solid #ddd;
+  background-color: transparent;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+
+.question {
+  padding: 0 3px;
+  border: 1px lightgrey solid;
+  border-radius: 12px;
+  background-color: aliceblue;
+}
+
+.tags_filter > label {
+  display: block;
+}
+
+.block {
+  display: block !important;
+}
+
+.btn-square {
+  border-radius: 0 !important;
+}
+
+.auto-moto {
+  margin-right: 150px;
+}
+
+.filter-input .dropdown-menu {
+  min-width: 75px;
+}
+
+.search-mess {
+  border-collapse: separate;
+  height: 20px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background: #fff none;
+  border: 1px solid #ccc;
+  /* border-radius: 4px; */
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.dropdown-menu > li {
+  margin: 0;
+  width: 100%;
+  cursor: pointer;
+}
