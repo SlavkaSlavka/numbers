@@ -31,7 +31,7 @@ $primary: #5185c7;
 }
 
 .plate-wrap {
-  border: 3px solid black;
+  border: 5px solid black;
   border-radius: 5px;
   height: 100px;
   width: 451px;
@@ -58,11 +58,13 @@ bottom: 10px;
       &.region-wrap {
         & input {
           margin-top: 5px;
+          font-size: 65px;
+          padding-bottom: 15px;
         }
-        height: 97px;
+        height: 95px;
         bottom: 0;
         margin-left: 18px;
-        border-left: 3px solid black;
+        border-left: 5px solid black;
         padding-left: 5px;
       }
 
@@ -125,9 +127,9 @@ bottom: 10px;
   width: 45px;
   -webkit-appearance: none;
   -moz-appearance: none;
-  height: 76px;
   appearance: none;
   border-bottom: 2px solid;
+  padding-bottom: 2px;
   border-top: 0;
   border-left: 0;
   border-right: 0;
@@ -144,7 +146,7 @@ bottom: 10px;
   padding: 0;
   overflow: visible;
   background-color: transparent;
-  width: 90px;
+  width: 85px;
   -webkit-appearance: none;
   -moz-appearance: none;
   height: 55px;
@@ -247,6 +249,10 @@ bottom: 10px;
   cursor: pointer;
 }
 .flag-list__border {
+  & li{
+    height: 6px;
+    padding: 0 !important;
+  }
   height: 20px;
   width: 25px !important;
   min-width: 35px !important;
@@ -261,8 +267,98 @@ bottom: 10px;
   font-weight: bold;
   margin-right: 5px;
   padding-top: 2px !important;
-  margin-left: 5px;
+  margin-left: 2px;
 }
 .item-border {
   padding-top: 1px !important;
+}
+.white-item {
+  background-color: white;
+}
+.blue-item {
+  background-color: blue;
+}
+.red-item {
+  background-color: red; 
+}
+@media screen and (max-width: 530px) {
+  .select-wrapper .row .col-auto {
+    width: 100%;
+  }
+.plate-wrap {
+  box-sizing: border-box;
+  padding-left: 15px;
+  height: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  position: static;
+  min-width: 260px;
+  width: auto;
+}
+.filter__form {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.inp-wrap {
+  display: flex;
+  & input {
+    
+   bottom: 10px;
+    position: static;
+    font-size: 60px;
+    width: 80% !important;
+  }
+  & .dropdown {
+ width: calc(100%/8) !important;
+    position: static !important;
+  }
+  width: 100% !important;
+  position: static !important;
+  
+  
+}
+.plate-wrap .inp-wrap > .dropdown.region-wrap {
+  height: 70px;
+  margin: 0;
+  width: 80px !important;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  & input {
+    
+    font-size: 40px;
+    height: 45px;
+    padding: 0;
+    margin: 0;
+  }
+}
+.flag-list {
+  margin: 0;
+}
+.flag {
+  width: 80%;
+  margin: 0;
+}
+.flag-list_item {
+  max-width: 25px;
+}
+.flag-list{
+ margin-left: -3px;
+}
+
+.item-rus {
+  font-size: 15px !important;
+}
+}
+@media screen and (max-width: 300px) {
+  .plate-wrap {
+    max-width: 250px;
+    padding-left: 5px;
+  }
+  .select-wrapper .row .col-auto {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
