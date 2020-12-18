@@ -31,31 +31,39 @@ $primary: #5185c7;
 }
 
 .plate-wrap {
-  background: url('/images/plate.png') no-repeat;
-  height: 101px;
+  border: 3px solid black;
+  border-radius: 5px;
+  height: 100px;
   width: 451px;
   position: relative;
   display: block;
+  margin-bottom: 5px;
 
   .inp-wrap {
     position: absolute;
-    left: 35px;
-    bottom: 15px;
+    left: 30px;
     line-height: 1;
     width: 400px;
     overflow: visible;
+    height: 100%;
 
     > .dropdown {
       width: 45px;
       line-height: 1;
       display: inline-block;
-
+bottom: 10px;
       vertical-align: bottom;
       position: relative;
 
       &.region-wrap {
-        bottom: 20px;
+        & input {
+          margin-top: 5px;
+        }
+        height: 97px;
+        bottom: 0;
         margin-left: 18px;
+        border-left: 3px solid black;
+        padding-left: 5px;
       }
 
       ul {
@@ -235,6 +243,26 @@ $primary: #5185c7;
 
 .dropdown-menu > li {
   margin: 0;
-  width: 100%;
+  
   cursor: pointer;
+}
+.flag-list__border {
+  height: 20px;
+  width: 25px !important;
+  min-width: 35px !important;
+  border: 1px solid black;
+}
+.flag-list {
+  display: flex;
+  margin-bottom: 0;
+}
+.item-rus {
+  font-size: 20px !important;
+  font-weight: bold;
+  margin-right: 5px;
+  padding-top: 2px !important;
+  margin-left: 5px;
+}
+.item-border {
+  padding-top: 1px !important;
 }
