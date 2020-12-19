@@ -72,3 +72,14 @@
     margin-right: auto;
   }
 }
+.left-block span {
+  padding-bottom: 5px;
+}
+@media screen and (max-width: 515px) {
+  .cost-wrapper label span {
+    margin-top: 15px;
+  }
+  .cost-wrapper label input {
+    margin-top: 15px;
+  }
+}
