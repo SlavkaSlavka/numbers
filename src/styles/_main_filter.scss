@@ -58,7 +58,7 @@ $primary: #5185c7;
       &.region-wrap {
         & input {
           margin-top: 5px;
-          font-size: 65px;
+          font-size: 45px;
           padding-bottom: 15px;
         }
         height: 95px;
@@ -117,10 +117,10 @@ $primary: #5185c7;
   text-align: center;
   cursor: pointer;
   overflow: visible;
-  font-family: "RoadNumbers", sans-serif;
-  font-size: 90px;
+  font-family: "Motor", sans-serif;
+  font-size: 80px;
   line-height: normal;
-  padding: 0;
+  padding-top: 10px;
   background-color: transparent;
   width: 45px;
   -webkit-appearance: none;
@@ -138,8 +138,8 @@ $primary: #5185c7;
 .region-code {
   position: relative;
   text-align: center;
-  font-family: "RoadNumbers", sans-serif;
-  font-size: 70px;
+  font-family: "Motor", sans-serif;
+  font-size: 45px;
   padding: 0;
   overflow: visible;
   background-color: transparent;
@@ -309,7 +309,7 @@ $primary: #5185c7;
     & input {
       bottom: 10px;
       position: static;
-      font-size: 60px;
+      font-size: 50px;
       height: 60px;
       min-height: 60px;
       width: 80%;
@@ -330,7 +330,7 @@ $primary: #5185c7;
     display: block;
     margin-left: auto;
     & input {
-      font-size: 40px;
+      font-size: 35px;
       height: 40px;
       min-height: 40px;
       padding: 0;
@@ -343,6 +343,7 @@ $primary: #5185c7;
   .flag {
     width: 80%;
     margin: 0;
+    margin-top: 5px;
   }
   .flag-list_item {
     max-width: 25px;
@@ -386,7 +387,7 @@ $primary: #5185c7;
   .inp-wrap input {
     height: 80px;
     min-height: 80px;
-    font-size: 80px;
+    font-size: 65px;
   }
   .plate-wrap .inp-wrap > .dropdown.region-wrap {
     font-size: 60px;
